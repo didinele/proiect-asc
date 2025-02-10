@@ -3,3 +3,5 @@ encoder/.yarn
 !encoder/.yarn/releases/*
 .DS_Store
 encoder/dist
+encoder/qrCode1.png
+encoder/qrCode2.png

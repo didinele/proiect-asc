@@ -137,7 +137,10 @@ function createQRCode(dataBits: (0 | 1)[], version: number) {
 		const positions = [6, size - 7];
 		for (const row of positions) {
 			for (const col of positions) {
-				if ((row === 6 && col === 6) || (row === 6 && col === size - 7) || (row === size - 7 && col === 6)) continue;
+				if ((row === 6 && col === 6) || (row === 6 && col === size - 7) || (row === size - 7 && col === 6)) {
+					continue;
+				}
+
 				drawAlignmentPattern(row, col);
 			}
 		}
@@ -238,4 +241,5 @@ async function saveQRCode(input: string, path: string) {
 	await pipeline(qrCodeCanvas.createPNGStream(), outStream);
 }
 
-await saveQRCode('https://cs.unibuc.ro/~crusu/asc/index.html', 'qrCode.png');
+await saveQRCode('https://cs.unibuc.ro/~crusu/asc/index.html', 'qrCode1.png');
+await saveQRCode('insert team name here', 'qrCode2.png');
