@@ -2,3 +2,4 @@ encoder/node_modules
 encoder/.yarn
 !encoder/.yarn/releases/*
 .DS_Store
+encoder/dist
