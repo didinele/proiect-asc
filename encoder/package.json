@@ -1,0 +1,27 @@
+{
+	"name": "encoder",
+	"description": "QR code encoder",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/didinele/proiect-asc.git"
+	},
+	"bugs": {
+		"url": "https://github.com/didinele/proiect-asc/issues"
+	},
+	"homepage": "https://github.com/didinele/proiect-asc",
+	"scripts": {
+		"lint": "eslint src && prettier --check .",
+		"build": "tsc",
+		"update": "yarn upgrade-interactive"
+	},
+	"devDependencies": {
+		"eslint": "^8.57.1",
+		"eslint-config-neon": "^0.1.62",
+		"prettier": "^3.3.3",
+		"prettier-eslint": "^16.3.0",
+		"typescript": "^5.6.3"
+	}
+}
