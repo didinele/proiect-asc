@@ -18,6 +18,7 @@
 		"noImplicitOverride": true,
 		"verbatimModuleSyntax": true,
 		"declaration": false,
+		"outDir": "./dist"
 	},
 	"include": ["./src/**/*.ts"]
 }
